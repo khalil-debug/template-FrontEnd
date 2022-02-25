@@ -1,0 +1,28 @@
+.container-fluid{
+    background-color: aliceblue;
+}
+
+.bg-card-gradient{
+    background-position: center;
+    background-image: var(--falcon-card-gradient);
+    color: #00B4D8;
+}
+.light{
+    position: inherit;
+    margin-top: 15%;
+}
+
+img{
+    width:100%;
+}
+
+p{
+    padding-top: 1.2rem;
+
+}
+
+.card{
+    position:absolute;
+    margin-top: 12%;
+    margin-left: 15%;
+}
