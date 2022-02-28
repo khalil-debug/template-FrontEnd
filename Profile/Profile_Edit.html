@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>compte - modification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+	<script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+	      <!-- Barre de navigation -->
+
+		  <nav class="navbar navbar-light bg-light navbar-top navbar-glass">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#invNavBar"
+					aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="invNavBar" aria-labelledby="invNavBarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title disabled" id="invNavBarLabel">Accueil</h5><br>
+						<button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<form class="d-flex">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">
+								Search
+							</button>
+						</form>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="Accueil.html">
+								   Accueil
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../Rebriques/GestionRebrique.html">
+									Gestion des Rubriques
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Gestion des Banques
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Gestion des Colonnes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Gestion des Annexes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Gestion des Utilisateurs
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+								   Consultation des déclarations des banques résidentes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+								   Consultation des tableaux de variations des montants 
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png" alt=""></a>
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+						Compte
+					</button>
+					<div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser" data-bs-popper="none">
+						<div class="bg-white dark__bg-1000 rounded-2 py-2">
+						  <a class="dropdown-item" href="../Profile/Profile.html"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
+						  <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Réclamation</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+		</nav>
+	
+		<!-- End of barre de navigation -->
+
+<div class="container" style="margin-top: 20px;">
+		<div class="main-body">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="d-flex flex-column align-items-center text-center">
+								<img src="../Images/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+									<input type="button" class="btn btn-primary px-4" value="Modifier la photo"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Nom</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="Snow">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Prénom</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="Jon">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Email</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="JonSnow@bct.gov.tn">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Nom d'utilisateur</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="jSnow2022">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Mot de passe</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="oéQZnz$Hx2Ç">
+								</div>
+							</div>
+							<hr>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Département</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<select name="dep" id="dep-select">
+										<option value="">--Aucun--</option>
+									</select>
+								</div>
+							</div>
+							<hr>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Rôle</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<select name="role" id="role-select">
+										<option value="">--Aucun--</option>
+										<option value="Admin">Administrateur</option>
+										<option value="Super">Superviseur</option>
+									</select>								
+								</div>
+							</div>
+							<hr>
+								<div class="col-sm-9">
+									<input type="button" class="btn btn-primary px-4" value="Enregistrer" style="margin-left: 100%;flex:0 0 33.333333%;">
+								</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<style type="text/css">
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+
+select{
+	position:relative;
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	-ms-flex:0 0 100%;
+	flex:0 0 100%;
+	max-width:100%;
+	border: #e2e8f0;
+}
+
+input[type=button]{
+	margin-top:1rem!important;
+	margin-bottom: 1rem!important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+.me-2 {
+    margin-right: .5rem!important;
+}
+</style>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
