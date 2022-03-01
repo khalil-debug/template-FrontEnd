@@ -100,7 +100,154 @@
 
     <!-- End of barre de navigation -->
 
+    <div class="container" style="margin-top: 20px;">
+        <div class="main-body">
+            <div class="row col-sm-12">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Choisissez une banque :</h6>
+                </div>
+            <div class="col-sm-9 text-secondary">
+                <select name="role" id="role-select">
+                    <option value="">--Aucune--</option>
+                    <option value="Admin">B1</option>
+                    <option value="Super">B2</option>
+                    <option value="Admin">B3</option>
+                    <option value="Super">B4</option>
+                    <option value="Admin">B5</option>
+                    <option value="Super">B6</option>
+                </select>								
+            </div>
+            <br>
+            <div class="col-sm-3" style="margin-top: 20px;">
+                <h6 class="mb-0">Début :</h6>
+            </div>
+            <div class="col-sm-9 text-secondary" style="margin-top: 20px;">
+                <input type="date" id="Debut">							
+            </div>
+            
+        <div class="col-sm-3" style="margin-top: 20px;">
+            <h6 class="mb-0">Fin :</h6>
+        </div>
+    <div class="col-sm-9 text-secondary" style="margin-top: 20px;">
+        <input type="date" id="fin">								
+    </div>
+            </div>
+            <div class="col-sm-12">
+                <input type="button" class="btn btn-primary px-4"  id="valider" value="Valider" style="margin-left:63%;flex:0 0 33.333333%;">
+                <input type="button" class="btn btn-primary px-4" id="enreg"  value="Enregistrer" disabled>
+                <input type="button" class="btn btn-primary px-4"  id="imp" value="Imprimer" disabled="true">
+            </div>
+            <div class="table-responsive" style="visibility: hidden;">
+                <table class="table" style="margin-top: 20px;">
+                    <thead>
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Libellé</th>
+                        <th scope="col">Début</th>
+                        <th scope="col">Fin</th>
+                        <th scope="col">Variation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">A0100000</th>
+                        <th scope="row">SYSTEME FINANCIER</th>
+                        <th scope="row">00.000</th>
+                        <th scope="row">00.000</th>  
+                        <th scope="row">00.000</th> 
+                      </tr>
+                      <tr>
+                        <th scope="row">A0101000</th>
+                        <th scope="row">CAISSE</th>
+                        <th scope="row">00.000</th>
+                        <th scope="row">00.000</th>  
+                        <th scope="row">00.000</th> 
+                      </tr>
+                      <tr>
+                        <th scope="row">A0102000</th>
+                        <th scope="row">BANNQUE CENTRALE DE TUNISIE</th>
+                        <th scope="row">00.000</th>
+                        <th scope="row">00.000</th>  
+                        <th scope="row">00.000</th>
+                      </tr>
+                      <tr>
+                        <td>A0102010</td>
+                        <td>Comptes ordinaires</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                      <tr>
+                        <td>A0102020</td>
+                        <td>Prêt le jour à jour et à terme</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                      <tr>
+                        <td>A0102030</td>
+                        <td>Reprise de liquidité</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">A0103000</th>
+                        <th scope="row">CERTIFI DE DEPOTS & BILLET</th>
+                        <th scope="row">00.000</th>
+                        <th scope="row">00.000</th>  
+                        <th scope="row">00.000</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">A0104000</th>
+                        <th scope="row">BANQUES DE DEPOTS</th>
+                        <th scope="row">00.000</th>
+                        <th scope="row">00.000</th>  
+                        <th scope="row">00.000</th>
+                      </tr>
+                      <tr>
+                        <td>A0104010</td>
+                        <td>Comptes ordinaires</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                      <tr>
+                        <td>A0104020</td>
+                        <td>Prêts au jour le jour et à terme</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                      <tr>
+                        <td>A0104990</td>
+                        <td>Autres</td>
+                        <td>00.000</td>
+                        <td>00.000</td>  
+                        <td>00.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+    </div>
+
+
 
 </body>
 
 </html>
+
+
+<script>
+    
+    var btn = document.getElementById("valider");
+        btn.onclick= function update() {
+    var btn2 = document.getElementById("enreg");
+    var btn3 = document.getElementById("imp");    
+    var tab = document.querySelector('.table-responsive');
+        btn2.disabled=false;
+        btn3.disabled=false;
+        tab.style.visibility="visible";
+}
+</script>
