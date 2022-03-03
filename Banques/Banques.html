@@ -19,9 +19,6 @@
 
     <nav class="navbar navbar-light bg-light navbar-top navbar-glass">
         <div class="container-fluid">
-            
-            <!-- bouton du menu -->
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#invNavBar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -29,58 +26,59 @@
             
             <div class="offcanvas offcanvas-start" tabindex="-1" id="invNavBar" aria-labelledby="invNavBarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title disabled" id="invNavBarLabel"><i class="bi bi-bank"></i> Gestion des Banques</h5><br>
+                    <h5 class="offcanvas-title disabled" id="invNavBarLabel"><i class="bi bi-house-door heading"></i> Accueil</h5><br>
                     <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             Search
                         </button>
-                    </form>
-
+                    </form>                   
+                    
                     <!-- Les composantes du menu -->
+                    
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="../accueil/Accueil.html">
-                                <i class="bi bi-house-door"></i> Accueil
+                            <a class="nav-link active" href="../accueil/Accueil.html">
+                                 Accueil
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Rebriques/GestionRebrique.html">
-                                <i class="bi bi-card-heading"></i> Gestion des Rubriques
+                                 Gestion des Rubriques
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../Banques/Banques.html">
-                                <i class="bi bi-bank"></i> Gestion des Banques
+                            <a class="nav-link" href="../Banques/Banques.html">
+                                 Gestion des Banques
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a lass="nav-link" href="../Colonnes/Colonnes.html">
-                                <i class="bi bi-columns-gap"></i> Gestion des Colonnes
+                            <a class="nav-link" href="../Colonnes/Colonnes.html">
+                                 Gestion des Colonnes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../annexes/Annexes.html">
-                                <i class="bi bi-table"></i> Gestion des Annexes
+                            <a class="nav-link" aria-current="page" href="../annexes/Annexes.html">
+                                 Gestion des Annexes
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Utilisateurs/Utilisateurs.html">
-                                <i class="bi bi-person-lines-fill"></i> Gestion des Utilisateurs
+                                 Gestion des Utilisateurs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../DeclarationsB/DeclarationBanques.html">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i> Consultation des déclarations des banques résidentes
+                            <a class="nav-link" aria-current="page" href="../DeclarationsB/DeclarationBanques.html">
+                                 Consultation des déclarations des banques résidentes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Tab-variations/TabVariation.html">
-                                <i class="fa fa-area-chart" aria-hidden="true"></i> Consultation des tableaux de variations des montants 
+                            <a class="nav-link" aria-current="page" href="../Tab-variations/TabVariation.html">
+                                 Consultation des tableaux de variations des montants 
                             </a>
                         </li>
                         

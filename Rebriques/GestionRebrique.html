@@ -20,87 +20,81 @@
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            
             <div class="offcanvas offcanvas-start" tabindex="-1" id="invNavBar" aria-labelledby="invNavBarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title disabled" id="invNavBarLabel">Gestion des Rubriques</h5><br>
-                    <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas"
-                        aria-label="Close"></button>
+                    <h5 class="offcanvas-title disabled" id="invNavBarLabel"><i class="bi bi-house-door heading"></i> Accueil</h5><br>
+                    <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             Search
                         </button>
                     </form>
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="../accueil/Accueil.html">
-                                Accueil
+                            <a class="nav-link active" href="../accueil/Accueil.html">
+                                 Accueil
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="GestionRebrique.html">
-                                Gestion des Rubriques
+                            <a class="nav-link" href="../Rebriques/GestionRebrique.html">
+                                 Gestion des Rubriques
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Gestion des Banques
+                            <a class="nav-link" href="../Banques/Banques.html">
+                                 Gestion des Banques
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Gestion des Colonnes
+                            <a class="nav-link" href="../Colonnes/Colonnes.html">
+                                 Gestion des Colonnes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Gestion des Annexes
+                            <a class="nav-link" aria-current="page" href="../annexes/Annexes.html">
+                                 Gestion des Annexes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Gestion des Utilisateurs
+                            <a class="nav-link" href="../Utilisateurs/Utilisateurs.html">
+                                 Gestion des Utilisateurs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                                Consultation des déclarations des banques résidentes
+                            <a class="nav-link" aria-current="page" href="../DeclarationsB/DeclarationBanques.html">
+                                 Consultation des déclarations des banques résidentes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                                Consultation des tableaux de variations des montants
+                            <a class="nav-link" aria-current="page" href="../Tab-variations/TabVariation.html">
+                                 Consultation des tableaux de variations des montants 
                             </a>
                         </li>
-
+                        
                     </ul>
                 </div>
             </div>
-            <a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png"
-                    alt=""></a>
+            <a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png" alt=""></a>
             <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
                     Compte
                 </button>
-                <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser"
-                    data-bs-popper="none">
+                <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser" data-bs-popper="none">
                     <div class="bg-white dark__bg-1000 rounded-2 py-2">
-                        <a class="dropdown-item" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
-                            Réclamation</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out"
-                                aria-hidden="true"></i> Déconnexion</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Réclamation</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion</a>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
-
+        
     </nav>
 
     <!-- End of barre de navigation -->
