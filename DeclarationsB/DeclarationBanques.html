@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Style-accueil.css">
+    <link href="../CSS/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="../JavaScript/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="Style-declaration.css">
+    <script src="Declarations.js"></script>
     <title>Consultation Admin</title>
 </head>
 
@@ -23,24 +21,26 @@
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="offcanvas offcanvas-start" tabindex="-1" id="invNavBar" aria-labelledby="invNavBarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title disabled" id="invNavBarLabel">Accueil</h5><br>
-                    <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title disabled" id="invNavBarLabel"> Déclarations des banques résidentes</h5>
+                    <br>
+                    <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             Search
                         </button>
                     </form>
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Accueil.html">
-                               Accueil
+                            <a class="nav-link" href="../accueil/Accueil.html">
+                                Accueil
                             </a>
                         </li>
                         <li class="nav-item">
@@ -49,60 +49,270 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="../Banques/Banques.html">
                                 Gestion des Banques
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="../Colonnes/Colonnes.html">
                                 Gestion des Colonnes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="../annexes/Annexes.html">
                                 Gestion des Annexes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="../Utilisateurs/Utilisateurs.html">
                                 Gestion des Utilisateurs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                               Consultation des déclarations des banques résidentes
+                            <a class="nav-link active" aria-current="page"
+                                href="../DeclarationsB/DeclarationBanques.html">
+                                Consultation des déclarations des banques résidentes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                               Consultation des tableaux de variations des montants 
+                            <a class="nav-link" aria-current="page" href="../Tab-variations/TabVariation.html">
+                                Consultation des tableaux de variations des montants
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
-            <a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png"
+                    alt=""></a>
             <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
                     Compte
                 </button>
-                <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser" data-bs-popper="none">
+                <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser"
+                    data-bs-popper="none">
                     <div class="bg-white dark__bg-1000 rounded-2 py-2">
-                      <a class="dropdown-item" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Réclamation</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
+                            Réclamation</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out"
+                                aria-hidden="true"></i> Déconnexion</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
-        
+
     </nav>
 
     <!-- End of barre de navigation -->
+    <main>
+        <form class="form-control" style="text-align: left;">
+            <div class="row" style="margin-top: 4%; margin-bottom: 4%;">
 
+                <div class="col-lg-3 col-xxl-3 col-md-12" style="padding-left: 4%;">
+
+                    <div class="filter-container">
+                        <label class="control-label">Mois: </label>
+                        <input type="month" name="date-month" id="date-month">
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-3 col-xl-3 col-md-4" style="padding-left: 4%;">
+                    <div class="filter-container">
+
+                        <label class="control-label">choisir un filtre des Rubriques: </label>
+                        <select class="form-select form-select-sm" tabindex="-1" aria-hidden="true" style="width: 30%;">
+                            <option value="Tout">Tous</option>
+                            <option value="Actif">Actif</option>
+                            <option value="Passif">Passif</option>
+                            <option value="Passif">Hors bilan</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-xxl-3 col-md-4">
+                    <div class="row">
+                        <div class="col">
+                            <span class="table-filter-title">
+                                Statut Total Brut:
+                            </span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Pas Null</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Null</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xxl-3 col-md-4">
+
+                </div>
+            </div>
+            </div>
+        </form>
+
+
+
+        <!-- Tables des Rebriques -->
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 table-responsive">
+                <div class="card">
+                    <table class="table" style="margin-top: 10px; position: relative;">
+                        <legend>Choix Banque(s)</legend>
+                        <caption>
+                            <div class="row" style="text-align: center;">
+                                <div class="col-6">
+                                    <label class=" ">
+                                        <input type="radio" name="banque" id="banque" value="checkedValue"
+                                            class="-input">
+                                        <span class="">Banque par Banque</span>
+                                        <span class=""></span>
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label class=" ">
+                                        <input type="radio" name="banque" id="banque" value="checkedValue"
+                                            class="-input">
+                                        <span class="">Cumul Banque</span>
+                                        <span class=""></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Choix</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Abréviation</th>
+                                <th scope="col">Libelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="banques" id="banques">
+                                </td>
+                                <td>
+                                    01
+                                </td>
+                                <td>
+                                    B1
+                                </td>
+                                <td>
+                                    Banque1
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 table-responsive">
+                <div class="card">
+                    <table class="table" style="margin-top: 10px;">
+                        <legend>
+                            Choix Rubrique(s)
+                        </legend>
+                        <caption>
+                            <div class="row" style="text-align: center;">
+                                <div class="col-6">
+                                    <label class=" ">
+                                        <input type="radio" name="rub" id="rub" value="checkedValue" class="">
+                                        <span class="">Toutes les Rubriques</span>
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label class=" ">
+                                        <input type="radio" name="rub" id="rub" value="checkedValue" class="">
+                                        <span class="">Rubriques nulles à éditer</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Choix</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Libelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="banques" id="banques">
+                                </td>
+                                <td>
+                                    A0100000
+                                </td>
+                                <td>
+                                    SYSTEME FINANCIER
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="container-fluid" id="Affichage">
+
+    </div>
 
 </body>
+
+<!-- footer -->
+<footer>
+
+    <div class="container-fluid">
+        <div class="row footer-rub" style="width: 100%;">
+            <div class="col-4">
+                <label class=" ">
+                    <input type="radio" name="rubriques" id="rubriques" value="checkedValue" class="">
+                    <span class="">Toutes les sous Rubriques</span>
+                    <span class=""></span>
+                </label>
+            </div>
+            <div class="col-4">
+                <label class=" ">
+                    <input type="radio" name="rubriques" id="rubriques" value="checkedValue" class="">
+                    <span class="">Quelques sous Rubriques</span>
+                    <span class=""></span>
+                </label>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+        <br>
+        <div class="row footer" style="left: 10%;">
+            <div class="col-4">
+                <label class=" ">
+                    <input type="radio" name="colonne" id="colonne" value="checkedValue" class="">
+                    <span class="">Colonne totale</span>
+                    <span class=""></span>
+                </label>
+            </div>
+            <div class="col-4">
+                <label class=" ">
+                    <input type="radio" name="colonne" id="colonne" value="checkedValue" class="">
+                    <span class="">Colonne moyenne</span>
+                    <span class=""></span>
+                </label>
+            </div>
+            <div class="col-4" style="text-align: right;">
+                <button type="button" class="btn btn-outline-primary" onclick="Afficher()">Afficher</button>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>

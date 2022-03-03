@@ -32,3 +32,23 @@ form{
 .dropdown{
     margin-right: 3%;
 }
+
+/* footer */
+
+footer{
+    background-color: #e9ecef;
+    color:#63707c;
+    margin-top: 10%;
+    bottom: 0px;
+}
+.footer{
+    
+    bottom: 2%;
+    width: 100%;
+}
+
+.footer-rub{
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+}
