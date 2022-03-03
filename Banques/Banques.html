@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="../Banques/Banques.html">
                                 Gestion des Banques
                             </a>
                         </li>
@@ -100,7 +100,237 @@
 
     <!-- End of barre de navigation -->
 
+    <div class="container">
+        <div class="main-body">
+				<div class="col-sm-9">
+					<input type="button" class="btn btn-primary px-4" id="btn-open" value="Ajouter une banque" style="margin-left: 105%;">
+				</div>
+            <div class="table-responsive">
+                <table class="table" style="margin-top: 20px;">
+                    <caption>Liste des banques</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Libellé</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>B1</td>
+                        <td>Banque 1</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>  
+                      </tr>
+                      <tr>
+                        <td>B2</td>
+                        <td>Banque 2</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B3</td>
+                        <td>Banque 3</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B4</td>
+                        <td>Banque 4</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B5</td>
+                        <td>Banque 5</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B6</td>
+                        <td>Banque 6</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B7</td>
+                        <td>Banque 7</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B8</td>
+                        <td>Banque 8</td>
+                        <td><td><div class="btn-toolbar">
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </div></td></td>
+                      </tr>
+                      <tr>
+                        <td>B9</td>
+                        <td>Banque 9</td>
+                        <td><td>
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </td></td>
+                      </tr>
+                      <tr>
+                        <td>B10</td>
+                        <td>Banque 10</td>
+                        <td><td>
+                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-trash"></button>
+                        </td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+    </div>
+
+<div class="modal" id="ModalAjout">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ajouter une banque</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <h6 class="mb-0">Code</h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <h6 class="mb-0">Libellé</h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn1 btn-primary">Ajouter</button>
+      </div>
+  </div>
+</div>
+
+<div class="modal" id="ModalModifier">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modifier une banque</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <h6 class="mb-0">Code</h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <h6 class="mb-0">Libellé</h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn2 btn-primary">Enregistrer les modifications</button>
+      </div>
+  </div>
+</div>
+
 
 </body>
-
 </html>
+
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+    body{
+        margin-top:20px;
+        color: #1a202c;
+        text-align: left;
+        background-color: #e2e8f0;    
+    }
+    .main-body {
+        padding: 15px;
+    }
+    
+    a{
+        color: #000;
+    }
+    
+    </style>
+
+    <script>
+        // Get the modal
+var modal1 = document.getElementById("ModalAjout");
+var modal2 = document.getElementById("ModalModifier");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("btn-open");
+var btn2 = document.getElementsById("btn-modif");
+
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+    </script>
