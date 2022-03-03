@@ -32,3 +32,9 @@ form{
 .dropdown{
     margin-right: 3%;
 }
+
+/* Card Manipulation */
+
+.card-body:hover{
+    background-color: #6610f2;
+}
