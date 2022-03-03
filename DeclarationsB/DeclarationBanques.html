@@ -120,10 +120,9 @@
                 </div>
                 <br>
                 <div class="col-lg-3 col-xl-3 col-md-4" style="padding-left: 4%;">
-                    <div class="filter-container">
-
+                    <div class="container-fluid">
                         <label class="control-label">choisir un filtre des Rubriques: </label>
-                        <select class="form-select form-select-sm" tabindex="-1" aria-hidden="true" style="width: 30%;">
+                        <select class="form-select form-select-sm" tabindex="-1" aria-hidden="true" style="width: 40%;">
                             <option value="Tout">Tous</option>
                             <option value="Actif">Actif</option>
                             <option value="Passif">Passif</option>
@@ -136,22 +135,22 @@
                 <div class="col-lg-3 col-xxl-3 col-md-4">
                     <div class="row">
                         <div class="col">
-                            <span class="table-filter-title">
-                                Statut Total Brut:
-                            </span>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Pas Null</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Null</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="radio" name="rub" id="rub" class="">
+                                    <span class="">Données en ligne</span>
+                                </div>
+                                <div class="col-12">
+                                    <input type="radio" name="rub" id="rub" checked="true" class="">
+                                    <span class="">Données archivées</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xxl-3 col-md-4">
-
+                    <span>Annexe</span>
+                    <input type="number" id="annexe" class="form-control-sm" style="width:15%;" placeholder="00">
                 </div>
             </div>
             </div>
