@@ -37,7 +37,7 @@
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Accueil.html">
+                            <a class="nav-link active" aria-current="page" href="../Accueil/Accueil.html">
                                Accueil
                             </a>
                         </li>
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Banques/Banques.html">
+                            <a class="nav-link" href="Banques.html">
                                 Gestion des Banques
                             </a>
                         </li>
@@ -72,7 +72,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="../Tab-variations/TabVariation.html">
                                Consultation des tableaux de variations des montants 
                             </a>
                         </li>
@@ -120,7 +120,7 @@
                         <td>B1</td>
                         <td>Banque 1</td>
                         <td><td><div class="btn-toolbar">
-                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-gear modif" id="btn-modif"></button>
                             <button class="btn fa fa-trash"></button>
                         </div></td></td>  
                       </tr>
@@ -128,7 +128,7 @@
                         <td>B2</td>
                         <td>Banque 2</td>
                         <td><td><div class="btn-toolbar">
-                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-gear modif" id="btn-modif"></button>
                             <button class="btn fa fa-trash"></button>
                         </div></td></td>
                       </tr>
@@ -136,7 +136,7 @@
                         <td>B3</td>
                         <td>Banque 3</td>
                         <td><td><div class="btn-toolbar">
-                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-gear modif" id="btn-modif"></button>
                             <button class="btn fa fa-trash"></button>
                         </div></td></td>
                       </tr>
@@ -144,7 +144,7 @@
                         <td>B4</td>
                         <td>Banque 4</td>
                         <td><td><div class="btn-toolbar">
-                            <button class="btn fa fa-gear" id="btn-modif"></button>
+                            <button class="btn fa fa-gear modif" id="btn-modif"></button>
                             <button class="btn fa fa-trash"></button>
                         </div></td></td>
                       </tr>
@@ -306,31 +306,36 @@
 
     <script>
         // Get the modal
-var modal1 = document.getElementById("ModalAjout");
-var modal2 = document.getElementById("ModalModifier");
+let modal1 = document.getElementById("ModalAjout");
+let modal2 = document.getElementById("ModalModifier");
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("btn-open");
-var btn2 = document.getElementsById("btn-modif");
+let btn1 = document.getElementById("btn-open");
+let btn2 = document.getElementsByClassName("modif");
+let close1 = document.getElementById("close1");
+let close2 = document.getElementById("close2");
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
   modal1.style.display = "block";
 }
-btn2.onclick = function() {
+let i=0;
+while (btn2[i]!=null){
+btn2[i].onclick = function() {
   modal2.style.display = "block";
+  console.log(modal1);
+}
+i++;
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
-}
-
-window.onclick = function(event) {
-  if (event.target == modal2) {
+  else if (event.target == modal2) {
     modal2.style.display = "none";
   }
 }
+
     </script>
