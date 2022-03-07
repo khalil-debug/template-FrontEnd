@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Profile Utilisateur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="jquery-1.10.2.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+	<script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+ <!-- Barre de navigation -->
+
+ <nav class="navbar navbar-light bg-light navbar-top navbar-glass">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#invNavBar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="invNavBar" aria-labelledby="invNavBarLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title disabled" id="invNavBarLabel">Accueil</h5><br>
+              <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">
+                      Search
+                  </button>
+              </form>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../accueil/Accueil.html">
+                         Accueil
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../Rebriques/GestionRebrique.html">
+                          Gestion des Rubriques
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../Banques/Banques.html">
+                          Gestion des Banques
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          Gestion des Colonnes
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          Gestion des Annexes
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../Utilisateurs/Utilisateurs.html">
+                          Gestion des Utilisateurs
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">
+                         Consultation des déclarations des banques résidentes
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../Tab-variations/TabVariation.html">
+                         Consultation des tableaux de variations des montants 
+                      </a>
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
+      <a class="navbar-brand" href="https://www.bct.gov.tn/bct/siteprod/index.jsp"><img src="../Images/logo.png" alt=""></a>
+      <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Compte
+          </button>
+          <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser" data-bs-popper="none">
+              <div class="bg-white dark__bg-1000 rounded-2 py-2">
+                <a class="dropdown-item" href="../Profile/Profile.html"><i class="fa fa-eye" aria-hidden="true"></i> Consulter</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Réclamation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../Authentification/index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion</a>
+              </div>
+            </div>
+      </div>
+  </div>
+  
+</nav>
+
+<!-- End of barre de navigation -->
+
+<div class="container">
+    <div class="main-body">
+    
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="../Images/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                      <h4>Jon Snow</h4>
+                      <p class="text-secondary mb-1">Administrateur</p>
+                      <p class="text-muted font-size-sm">Département Supervision Bancaire</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Nom</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Snow
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Prénom</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Jon
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      JonSnow@bct.gov.tn
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Nom d'utilisateur</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      jSnow2022
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Mot de passe</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      oéQZnz$Hx2Ç
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Département</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Département Supervision Bancaire
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Rôle</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Administrateur
+                    </div>
+                  </div>
+                  <hr>
+                    <div class="col-sm-9"></div>
+                      <input type="button" class="btn btn-primary px-4" onclick="window.location.href = 'profile_edit.html';" value="Modifier" style="margin-left: 65%;flex:0 0 33.333333%;">
+                      <input type="button" class="btn btn-primary px-4" onclick="window.location.href = '../utilisateurs/utilisateurs.html';"value="Retour">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+<style type="text/css">
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
